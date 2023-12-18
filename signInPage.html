@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in / Sign up</title>
+    <link rel="stylesheet" href="signInPageStyle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/book.png">
+</head>
+<body>
+
+<div class="container">
+    <div class="box-signIn">
+        <form>
+            <h1>Sign in</h1>
+            <input type="email" placeholder="Email address">
+            <input type="password" placeholder="Password">
+            <button type="submit">Continue</button>
+            <a id="sign-up-link">Not a member? Sign Up</a>
+        </form>
+    </div>
+    <div class="box-SignUp">
+        <form>
+            <h1>Sign up</h1>
+            <input type="email" placeholder="Email address">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <button type="submit">Continue</button>
+            <a id="sign-in-link">Already a member? Sign In</a>
+        </form>
+    </div>
+</div>
+
+<script>
+    const signUpLink = document.getElementById("sign-up-link");
+    const signInLink = document.getElementById("sign-in-link");
+    const signUpBox = document.querySelector(".box-SignUp");
+    const signInBox = document.querySelector(".box-signIn");
+
+    signUpLink.addEventListener("click", function() {
+        signInBox.style.display = "none";
+        signUpBox.style.display = "block";
+    });
+
+    signInLink.addEventListener("click", function() {
+        signUpBox.style.display = "none";
+        signInBox.style.display = "block";
+    });
+
+</script>
+</body>
+</html>

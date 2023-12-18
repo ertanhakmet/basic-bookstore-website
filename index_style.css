@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #F8F9FA;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2E2E2E;
+    padding: 10px;
+}
+
+.logo{
+    width: 180px;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #1E90FF;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    white-space: nowrap;
+    margin-right: 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #007BFF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0062cc;
+    box-shadow: 0 0 10px #0062cc;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 30px 20px 100px;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 32px;
+}
+
+.left-column h1{
+    font-size: 85px;
+    white-space: nowrap;
+}
+
+.left-column p{
+    color: #212529;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.left-column form{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.left-column form input{
+    background: #d1d3d4;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+.left-column form .button{
+    margin-left: 10px;
+}
+
+
+
+.right-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 600px;
+    border-radius: 40px;
+}
+
+footer{
+    background: #212529;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+footer p{
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+

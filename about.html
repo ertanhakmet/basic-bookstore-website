@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="about_style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/book.png">
+</head>
+<body>
+
+<div class="container">
+    <div class="left-side">
+        <h1>Our Mission</h1>
+        <p>At our book store, we are passionate about reading and the impact it can have on people's lives.
+            Our mission is to provide an online space where book lovers of all ages and interests can discover new titles,
+            connect with fellow readers, and share their love of literature. We believe that reading is a lifelong journey
+            that never ends, and we are here to support our customers at every step of that journey. Whether you're a lifelong
+            bookworm or a new reader just starting to explore the joys of literature, we are committed to helping you find the
+            books that inspire you, challenge you, and transport you to new worlds.
+            Our team of book experts are constantly scouring the literary world to find the best new releases, hidden gems, and
+            timeless classics to add to our online store. We strive to offer a diverse and inclusive selection of books that reflect
+            the world we live in and the myriad of voices and experiences within it.</p>
+        <div class="hidden-text" id="hidden-text">
+            <p>But our book store is more than just a place to buy books. We are a community of readers who love to connect and share
+                our passion for literature. That's why we offer a variety of resources and tools to help our customers explore new genres,
+                find new authors, and connect with other readers who share their interests.
+                From book clubs and author events to expert recommendations and reader reviews, we are here to help you discover your
+                next great read and connect with others who love books as much as you do.
+                At our book store, we believe that reading has the power to transform lives, and we are committed to helping you discover
+                the books that will change yours.</p>
+        </div>
+        <button class="read-more" onclick="toggleText()">Read more</button>
+        <button class="read-more hidden-text" onclick="toggleText()">Read less</button>
+
+    </div>
+    <div class="right-side">
+        <img src="images/bookstore.jpg" alt="">
+    </div>
+</div>
+
+<script>
+    function toggleText() {
+        var hiddenText = document.getElementById("hidden-text");
+        var readMoreBtn = document.querySelector(".read-more");
+        var readLessBtn = document.querySelector(".read-more.hidden-text");
+        if (hiddenText.style.display === "none") {
+            hiddenText.style.display = "block";
+            readMoreBtn.classList.add("hidden-text");
+            readLessBtn.classList.remove("hidden-text");
+        } else {
+            hiddenText.style.display = "none";
+            readMoreBtn.classList.remove("hidden-text");
+            readLessBtn.classList.add("hidden-text");
+        }
+    }
+</script>
+
+</body>
+</html>
